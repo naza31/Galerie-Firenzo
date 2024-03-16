@@ -1,0 +1,357 @@
+body {
+    background-color: floralwhite;
+    
+}
+
+#navbar {
+    position: absolute;
+    top: 20px; 
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    z-index: 2; 
+    color: floralwhite;
+    font-family: "Brush Script MT", cursive;
+    font-size: 20px;
+}
+
+
+
+.brand {
+    color: white;
+    margin: 0;
+
+}
+
+#menu {
+    display: flow-root;
+    color: white;
+    margin-top: 10px; 
+    z-index: 2;
+}
+
+#menu a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    padding: 10px 15px;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+#menu a:hover {
+    background-color: #555;
+}
+
+#hero-layout {
+    position: relative;
+    background-image: url(images/expo.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 600px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#hero-layout .content {
+    text-align: center;
+    display: flex;
+    position: absolute;
+    flex-direction: column;
+    align-items: center;
+    height: fit-content;
+    gap: 12px;
+    top: 50%;
+    left: 50%;
+    margin-top:90px;
+    transform: translate(-50%, -50%);
+}
+
+#hero-layout .content * {
+    margin: 0;
+}
+
+#hero-layout .content h1 {
+    font-size: 64px;
+}
+
+#hero-layout .content h2 {
+    font-size: 
+}
+
+#hero-layout .content a {
+    border-radius: 50px;
+    border: 2px solid white;
+    padding: 12px 24px;
+    color: black;
+    text-decoration: none;
+}
+
+#H1 {
+    color: whitesmoke;
+}
+
+.img-circle {
+    border-radius: 50%;
+}
+
+.img-bordered {
+    border: 2px solid yellow;
+}
+
+footer {
+    background-color:darkred;
+    padding: 20px;
+    text-align: center;
+}
+
+.newletter {
+    margin-top: 20px;
+}
+
+.contenu {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.contenu h2 {
+    color: black;
+}
+
+.contenu p {
+    color: black;
+}
+
+.content a {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color:white;
+    color: black;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+.newletter form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.newletter label {
+    color: #333;
+    margin-bottom: 8px;
+}
+
+.newletter input {
+    padding: 10px;
+    margin-bottom: 16px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.newletter button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    text-decoration: none;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#prochaines-expositions {
+    background: linear-gradient(to right, darkred, #8b0000); /* Dégradé de couleurs */
+    color: #fff;
+    padding: 40px; /* Augmentation de l'espacement intérieur pour un look plus sophistiqué */
+    text-align: center; /* Centrage du contenu */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Ombre légère */
+}
+
+.expositions-container {
+    border: 2px solid lightslategrey;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    margin-bottom: 15px; /* Espacement légèrement plus grand */
+}
+
+h2 {
+    color: white;
+    font-size: 28px; /* Augmentation de la taille de la police */
+    font-family: 'Georgia', serif; /* Utilisation d'une police de caractères plus élégante */
+    margin-bottom: 20px; /* Espacement entre le titre et la liste */
+}
+
+.expositions-container {
+    display: flex;
+    flex-wrap: wrap; /* Permet aux éléments de passer à la ligne si l'espace est insuffisant */
+}
+
+.exposition {
+    flex: 1; /* Chaque élément d'exposition occupe une fraction égale de l'espace disponible */
+    margin: 10px; /* Marge autour de chaque élément d'exposition */
+    box-sizing: border-box; /* Inclure la marge dans la largeur et la hauteur */
+}
+
+.exposition img {
+    max-width: 100%; 
+    border-radius: 8px; 
+    margin-bottom: 10px; 
+}
+
+.exposition button {
+    background-color: #darkred;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.exposition button:hover {
+    background-color: #8b0000;
+}
+/* Styles pour la section Histoire du Lieu */
+#histoire-du-lieu {
+    text-align: center;
+    margin-top: 15px;
+    padding: 50px; /* Ajoute un espace autour du contenu */
+    background-image: url(images/2.jpg); /* Remplacez 'chemin/vers/votre-image.jpg' par le chemin de votre image */
+    background-size: cover; /* Ajuste la taille de l'image pour couvrir toute la section */
+    background-position: center; /* Centre l'image horizontalement et verticalement */
+    color: #fff; /* Couleur du texte sur l'image de fond */
+}
+
+.section-title {
+    color: #darkred; /* Couleur du titre */
+    font-size: 24px; /* Taille du titre */
+    margin-bottom: 20px; /* Espacement sous le titre */
+}
+
+#histoire-du-lieu p {
+    text-align: justify;
+    text-align: center;
+    margin-bottom: 15px; /* Espacement entre les paragraphes */
+}
+
+/* Styles pour la section Avis Clients */
+#avis-clients {
+    text-align: center;
+}
+
+.avis-container {
+    background-color: darkred;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow-x: auto; /* Ajoute une barre de défilement horizontale si nécessaire */
+    margin-top: 20px;
+    border: 2px solid #fff; /* Ajout de bordure */
+    border-radius: 10px; /* Ajout de bordure arrondie */
+}
+
+.avis {
+    flex: 0 0 auto; /* Laissez le conteneur avis avoir une largeur fixe */
+    width: 200px; /* Ajustez la largeur selon vos besoins */
+    margin: 30px; /* Espacement entre les avis clients */
+    text-align: center;
+}
+
+.avis-content {
+    text-align: center;
+}
+
+.avis img {
+    width: 100px; /* Ajustez la largeur de l'image selon vos besoins */
+    height: 100px; /* Ajustez la hauteur de l'image selon vos besoins */
+    border-radius: 50%;
+}
+/* Styles pour la section Contact */
+#contact-container {
+    display: flex;
+    justify-content: space-around; /* Espacement équitable entre les éléments */
+    align-items: center; /* Centre les éléments verticalement */
+    margin-top: 20px;
+}
+
+#texte-gauche {
+    flex: 0 0 40%; /* Ajustez la largeur du bloc de texte selon vos besoins */
+    padding: 20px;
+}
+
+#contact {
+    flex: 0 0 50%; /* Ajustez la largeur du formulaire selon vos besoins */
+    text-align: left;
+}
+
+#contact form {
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+#contact label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+
+#contact textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    box-sizing: border-box;
+}
+
+#contact button {
+    background-color: #darkred;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+/* Effet de survol sur le bouton */
+#contact button:hover {
+    background-color: #cc0000;
+}
+
+/* Styles pour la section Galerie */
+.galerie {
+    display: flex;
+    margin-bottom: 40px;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #f2f2f2; /* Couleur de fond de la galerie */
+    padding: 40px; /* Ajustez l'espacement intérieur selon vos besoins */
+    text-align: center; /* Centrage du contenu */
+}
+
+.galerie-title {
+    color: darkred; /* Couleur du titre */
+    font-size: 24px; /* Taille du titre */
+    margin-bottom: 20px; /* Espacement sous le titre */
+    text-align: center;
+}
+
+.galerie img {
+    width: 20%; /* L'image ne dépassera pas la largeur de son conteneur */
+    height: auto; /* Préserve les proportions de l'image */
+    border-radius: 8px; /* Ajoutez des coins arrondis si vous le souhaitez */
+    margin-bottom: 10px; /* Espacement entre les images */
+}
